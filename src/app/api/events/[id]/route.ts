@@ -6,7 +6,11 @@ export async function POST(
 ) {
   const { id } = await params;
   const userId = id;
-  if (userId == "eventbirofatiya" || userId == "eventbirodewati") {
+  if (
+    userId == "eventbirofatiya" ||
+    userId == "eventbirodewati" ||
+    userId == "normingftpi2"
+  ) {
     return NextResponse.json({ message: "valid" });
   }
   return NextResponse.json({ error: "invalid" }, { status: 500 });

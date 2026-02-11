@@ -19,8 +19,6 @@ import { ChangeEvent, useEffect, useState } from "react";
 import { z } from "zod";
 import { FaMale, FaFemale } from "react-icons/fa";
 import React from "react";
-import EventBiroFatiya from "@/components/welcome/eventbirofatiya";
-import EventBiroDewati from "@/components/welcome/eventbirodewati";
 import NormingFTPI2 from "@/components/welcome/normingftpi2";
 import UjiCobaFLSI from "@/components/welcome/ujicobaflsi";
 

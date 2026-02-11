@@ -22,6 +22,7 @@ import React from "react";
 import EventBiroFatiya from "@/components/welcome/eventbirofatiya";
 import EventBiroDewati from "@/components/welcome/eventbirodewati";
 import NormingFTPI2 from "@/components/welcome/normingftpi2";
+import UjiCobaFLSI from "@/components/welcome/ujicobaflsi";
 
 const emailSchema = z.object({
   email: z.email("Invalid email address"),
@@ -139,17 +140,13 @@ export default function Home({ params }: { params: Promise<{ id: string }> }) {
             <CardHeader className="flex flex-row items-center">
               <CardTitle className="flex flex-col w-full font-semibold text-2xl text-gray-800">
                 {/* Tambah Welcome Page untuk setiap event di sini */}
-                {currentPage === 1 &&
-                  resolvedParams.id === "eventbirofatiya" && (
-                    <EventBiroFatiya />
-                  )}
-                {currentPage === 1 &&
-                  resolvedParams.id === "eventbirodewati" && (
-                    <EventBiroDewati />
-                  )}
                 {currentPage === 1 && resolvedParams.id === "normingftpi2" && (
                   <NormingFTPI2 />
                 )}
+                {currentPage === 1 && resolvedParams.id === "ujicobaflsi" && (
+                  <UjiCobaFLSI />
+                )}
+                {/* Akhir dari bagian welcome page */}
 
                 {currentPage === 2 && (
                   <div className="flex flex-col">

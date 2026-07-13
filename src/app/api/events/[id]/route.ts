@@ -10,7 +10,7 @@ export async function POST(
     userId == "ujicobaflsi" ||
     userId == "SelarasMale" ||
     userId == "SelarasFemale" ||
-    userId == "ujicobafcat2"
+    userId == "fcat2binus"
   ) {
     return NextResponse.json({ message: "valid" });
   }

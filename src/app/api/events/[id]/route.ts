@@ -9,7 +9,8 @@ export async function POST(
     userId == "normingftpi2" ||
     userId == "ujicobaflsi" ||
     userId == "SelarasMale" ||
-    userId == "SelarasFemale"
+    userId == "SelarasFemale" ||
+    userId == "ujicobafcat2"
   ) {
     return NextResponse.json({ message: "valid" });
   }
